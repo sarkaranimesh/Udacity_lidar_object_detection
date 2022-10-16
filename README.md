@@ -161,9 +161,11 @@ large vehicle with trailer attached on the adjacent lane
 Section 2 :
 next we will create a bird's eye view image of the point cloud image and analyze intensity and height maps.
 BEV image
+
 ![image](https://user-images.githubusercontent.com/32779283/196014748-f5db4457-fbec-4f25-95a8-fee9819319ad.png)
 
 Intensity map
+
 ![image](https://user-images.githubusercontent.com/32779283/196014763-5142f1f7-de84-40f1-a752-f475cdcaa3a4.png)
 
 Height map
