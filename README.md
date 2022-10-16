@@ -133,19 +133,30 @@ Project Results and overivew
 
 Section 1 :
 first we analyze the Lidar images from the waymo dataset. This is done by generating a range image. A range image is a gray scale image displayed such that the entire 360 degree view of the lidar sensor can be visualised. Along with the range image we visualize the 3-D point cloud image for the headway scene. 
-Following are 3 images from different frames.
-frame # 1
-![range_image_screenshot_16 10 2022](https://user-images.githubusercontent.com/32779283/196013568-33fa016e-f901-48fc-a9db-71b91d5437fd.png)
+Following are 10 exmaple images from different frames. We can see the various properties of the road object by analyzing the 3D point cloud images.
+example 1:
+![image](https://user-images.githubusercontent.com/32779283/196056696-1fbc51cf-1493-4757-8178-ebeb2ae32c74.png)
 
-![image](https://user-images.githubusercontent.com/32779283/196013575-1d84f976-2482-4208-b60d-6525d330a451.png)
+example 2:
 
-frame #2 
-![range_image_screenshot_16 10 2022_1](https://user-images.githubusercontent.com/32779283/196013580-33aa5eca-e240-440a-aa50-20e6d3a9d4c3.png)
-![image](https://user-images.githubusercontent.com/32779283/196013583-86a56172-3d07-46fd-b422-b855daeed90e.png)
+![image](https://user-images.githubusercontent.com/32779283/196056798-95006726-aeec-4715-9530-fe106c0c69cc.png)
 
-frame #3
-![range_intensity_screenshot_08 10 2022](https://user-images.githubusercontent.com/32779283/196013587-fb726598-1bbe-46a8-ac46-ee15a8f61881.png)
-![image](https://user-images.githubusercontent.com/32779283/196013592-4a74b6a1-0efd-437b-9693-ae5996cd09c1.png)
+example 3:
+![image](https://user-images.githubusercontent.com/32779283/196056888-66dff449-afae-4db5-a479-d43024f1d6c6.png)
+
+example 4:
+![image](https://user-images.githubusercontent.com/32779283/196056997-c8a95ed6-a236-429f-bf4c-dda78297b8c6.png)
+
+example 5:
+![image](https://user-images.githubusercontent.com/32779283/196057100-77d609dd-1241-42e1-be8b-26667419b346.png)
+
+example 6:
+![image](https://user-images.githubusercontent.com/32779283/196057171-4121c815-8e70-4a07-bcd4-8bac21927497.png)
+
+example 7:
+large vehicle with trailer attached on the adjacent lane
+![image](https://user-images.githubusercontent.com/32779283/196057246-bec6ca26-0a1c-46eb-82e2-07ac21b9c4d0.png)
+
 
 Section 2 :
 next we will create a bird's eye view image of the point cloud image and analyze intensity and height maps.
