@@ -129,5 +129,48 @@ Parts of this project are based on the following repositories:
 - [Complex-YOLO: Real-time 3D Object Detection on Point Clouds](https://github.com/maudzung/Complex-YOLOv4-Pytorch)
 
 
+Project Results and overivew
+
+Section 1 :
+first we analyze the Lidar images from the waymo dataset. This is done by generating a range image. A range image is a gray scale image displayed such that the entire 360 degree view of the lidar sensor can be visualised. Along with the range image we visualize the 3-D point cloud image for the headway scene. 
+Following are 3 images from different frames.
+frame # 1
+![range_image_screenshot_16 10 2022](https://user-images.githubusercontent.com/32779283/196013568-33fa016e-f901-48fc-a9db-71b91d5437fd.png)
+
+![image](https://user-images.githubusercontent.com/32779283/196013575-1d84f976-2482-4208-b60d-6525d330a451.png)
+
+frame #2 
+![range_image_screenshot_16 10 2022_1](https://user-images.githubusercontent.com/32779283/196013580-33aa5eca-e240-440a-aa50-20e6d3a9d4c3.png)
+![image](https://user-images.githubusercontent.com/32779283/196013583-86a56172-3d07-46fd-b422-b855daeed90e.png)
+
+frame #3
+![range_intensity_screenshot_08 10 2022](https://user-images.githubusercontent.com/32779283/196013587-fb726598-1bbe-46a8-ac46-ee15a8f61881.png)
+![image](https://user-images.githubusercontent.com/32779283/196013592-4a74b6a1-0efd-437b-9693-ae5996cd09c1.png)
+
+Section 2 :
+next we will create a bird's eye view image of the point cloud image and analyze intensity and height maps.
+BEV image
+![image](https://user-images.githubusercontent.com/32779283/196014748-f5db4457-fbec-4f25-95a8-fee9819319ad.png)
+
+Intensity map
+![image](https://user-images.githubusercontent.com/32779283/196014763-5142f1f7-de84-40f1-a752-f475cdcaa3a4.png)
+
+Height map
+![image](https://user-images.githubusercontent.com/32779283/196014768-18af8051-d8a2-4082-9864-a3481d0a4e1e.png)
+
+from the intensity and height map image we can identify the different objects on the road. This means the height and intensity map have been created with proper thresholds.
+
+Section 3 : model based object detection
+we will use 2 pre trained models 'darknet' and 'fpn-resnet' to detect the objects and visualize bounding boxes around them. 
+
+following results generated using 'fpn-resnet' model
+![image](https://user-images.githubusercontent.com/32779283/196014873-4e17dd37-323a-48a1-bfca-3ff3e85ff794.png)
+
+section 4:
+finally we will apply performance metrics to compare the detections with ground truth labels. This is done by measuring performance using precision and recall.
+
+![image](https://user-images.githubusercontent.com/32779283/196014892-24735b78-6901-4064-a5a4-3552a486e5f2.png)
+
+
 ## License
 [License](LICENSE.md)
